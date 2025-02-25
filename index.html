@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <h2>Calculadora</h2>
+        <label for="display" class="sr-only">Visor da Calculadora</label>
+        <input type="text" id="display" class="display" disabled placeholder="0">
+        <div class="buttons">
+            <button onclick="clearDisplay()" class="clear" aria-label="Limpar">C</button>
+            <button onclick="removeLastCharacter()" class="delete" aria-label="Remover Último Caractere">←</button>
+            <button onclick="appendCharacter('(')" class="operation" aria-label="Abrir Parêntese">(</button>
+            <button onclick="appendCharacter(')')" class="operation" aria-label="Fechar Parêntese">)</button>
+
+            <button onclick="appendCharacter('7')" aria-label="Sete">7</button>
+            <button onclick="appendCharacter('8')" aria-label="Oito">8</button>
+            <button onclick="appendCharacter('9')" aria-label="Nove">9</button>
+            <button onclick="appendCharacter('/')" class="operation" aria-label="Dividir">/</button>
+
+            <button onclick="appendCharacter('4')" aria-label="Quatro">4</button>
+            <button onclick="appendCharacter('5')" aria-label="Cinco">5</button>
+            <button onclick="appendCharacter('6')" aria-label="Seis">6</button>
+            <button onclick="appendCharacter('*')" class="operation" aria-label="Multiplicar">*</button>
+
+            <button onclick="appendCharacter('1')" aria-label="Um">1</button>
+            <button onclick="appendCharacter('2')" aria-label="Dois">2</button>
+            <button onclick="appendCharacter('3')" aria-label="Três">3</button>
+            <button onclick="appendCharacter('-')" class="operation" aria-label="Subtrair">-</button>
+
+            <button onclick="appendCharacter('0')" aria-label="Zero">0</button>
+            <button onclick="appendCharacter('.')" aria-label="Ponto Decimal">.</button>
+            <button onclick="calculateResult()" class="equal" aria-label="Calcular Resultado">=</button>
+            <button onclick="appendCharacter('+')" class="operation" aria-label="Somar">+</button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        Desenvolvido por <a href="https://www.linkedin.com/in/jvmian/" target="_blank">João Victor Mian Valdomiro</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
