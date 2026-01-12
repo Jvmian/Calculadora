@@ -29,10 +29,8 @@ cd calculadora-web
 ## 🌐 Links do projeto
 
 🔗 **Site (GitHub Pages):**  
-(coloque aqui o link do site)
+[Site aqui!](https://jvmian.github.io/Projeto-Login/index.html)
 
-🔗 **Repositório GitHub:**  
-(coloque aqui o link do repositório)
 
 ---
 
